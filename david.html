@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Raj R - Portfolio</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to bottom right, #001f3f, #00ff99);
+        color: #f5f5f5;
+    }
+
+    /* Header */
+    header {
+        position: relative;
+        text-align: center;
+        color: white;
+        padding: 90px 20px;
+        background: linear-gradient(135deg, #004aad, #00ff99);
+        background-image: url('https://images.unsplash.com/photo-1581091215367-59ab6b36620e');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    header::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+    header h1, header p {
+        position: relative;
+        z-index: 1;
+    }
+
+    header h1 {
+        font-size: 3.2rem;
+        letter-spacing: 2px;
+        text-shadow: 0 0 15px #00ff99;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 8px;
+    }
+
+    /* Container */
+    .container {
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    /* Section */
+    section {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 15px;
+        margin-bottom: 40px;
+        padding: 30px;
+        box-shadow: 0 5px 25px rgba(0, 255, 153, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    section:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 30px rgba(0, 255, 153, 0.4);
+    }
+
+    h2 {
+        color: #00ff99;
+        border-left: 6px solid #00ccff;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+        text-shadow: 0 0 8px #00ccff;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    /* Skills */
+    ul {
+        list-style-type: none;
+        padding-left: 10px;
+    }
+    li {
+        background: linear-gradient(90deg, #00ccff, #00ff99);
+        color: #001f3f;
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 20px;
+        margin: 6px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        transition: transform 0.2s;
+    }
+    li:hover {
+        transform: scale(1.1);
+    }
+
+    /* Project Section */
+    .project {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 15px;
+        border-radius: 10px;
+        margin: 10px 0;
+        border-left: 5px solid #00ff99;
+    }
+
+    .project h3 {
+        color: #00ffcc;
+        margin-bottom: 6px;
+    }
+
+    /* Education */
+    .education {
+        line-height: 1.6;
+    }
+
+    /* Hobbies */
+    .hobbies span {
+        display: inline-block;
+        background: #00ccff;
+        color: #001f3f;
+        padding: 8px 14px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    /* Contact */
+    #contact a {
+        color: #00ffcc;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #contact a:hover {
+        text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        background: linear-gradient(135deg, #002b5b, #00cc99);
+        color: white;
+        padding: 25px;
+        margin-top: 60px;
+        box-shadow: 0 -5px 20px rgba(0,255,153,0.3);
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>David Raj R</h1>
+        <p>2nd Year Electrical Engineering Student ⚡ | Innovator | Tech Learner</p>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm <strong>David Raj R</strong> — a passionate and forward-thinking Electrical Engineering student, driven by curiosity for energy systems, IoT, and automation. I’m fascinated by how technology can improve efficiency and sustainability in electrical networks. My aim is to explore smart energy solutions that power the future.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>MATLAB</li>
+                <li>Proteus Simulation</li>
+                <li>AutoCAD Electrical</li>
+                <li>IoT Integration</li>
+                <li>Embedded Systems</li>
+                <li>Arduino Programming</li>
+                <li>Python</li>
+                <li>C</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Smart Energy Meter</h3>
+                <p>Developed a real-time energy monitoring system using IoT and microcontrollers to display and track household power consumption via the internet.</p>
+            </div>
+            <div class="project">
+                <h3>Wireless Power Transfer Prototype</h3>
+                <p>Built a small-scale model demonstrating wireless energy transfer using magnetic resonance coupling, inspired by Tesla’s concepts.</p>
+            </div>
+            <div class="project">
+                <h3>Automatic Load Controller</h3>
+                <p>Created a system that automatically manages loads during power shortages using microcontroller-based priority logic control.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <p><strong>B.E. Electrical and Electronics Engineering</strong> - Government College of Engineering, Salem</p>
+                <p><strong>Year:</strong> 2nd Year (2025)</p>
+                <p><strong>CGPA:</strong> 8.7 (Current)</p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <div class="hobbies">
+                <span>IoT Development</span>
+                <span>Renewable Energy</span>
+                <span>Circuit Design</span>
+                <span>Music</span>
+                <span>Photography</span>
+                <span>Reading Tech Articles</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>📞 Mobile: <strong>+91 9876543210</strong></p>
+            <p>📧 Email: <a href="mailto:davidrajr@gmail.com">davidrajr@gmail.com</a></p>
+            <p>🌐 LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/davidrajr</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 David Raj R. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
